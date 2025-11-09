@@ -1,6 +1,6 @@
 # Smart India Hackathon Workshop
-# Date: 30.12.2024
-## Register Number: 24900596
+# Date: 9-11-2025
+## Register Number: 212224100032
 ## Name: Kishore B
 ## Problem Title
 Comprehensive Alumni Engagement Platform for Educational Institutions
