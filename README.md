@@ -1,92 +1,72 @@
 # Smart India Hackathon Workshop
-# Date: 9-11-2025
-## Register Number: 212224100032
-## Name: Kishore B
+## Register Number:212224040058
+## Name:K.DEENATHAYLAN
 ## Problem Title
-Comprehensive Alumni Engagement Platform for Educational Institutions
+E-Waste Facility Locator
 ## Problem Description
-**Background**:
-Alumni associations are a critical component of educational institutions, bridging the gap between alumni and their alma mater. These associations play a vital role in maintaining relationships, fostering professional networking, encouraging philanthropic contributions, and inspiring current students through alumni achievements. However, many institutions struggle to maintain consistent and meaningful engagement with their alumni due to outdated systems, limited resources, and lack of innovative platforms.
-
-**Challenges Faced**:
-1. **Fragmented Communication**: Many alumni lose touch with their institutions due to a lack of centralized and easily accessible platforms.
-2. **Limited Networking Opportunities**: Alumni struggle to connect with peers, mentors, and job opportunities that align with their interests or career goals.
-3. **Inefficient Donation Systems**: Without secure and transparent donation processes, alumni are hesitant to contribute to institutional growth.
-4. **Poor Event Management**: Organizing alumni reunions, webinars, or workshops becomes a logistical challenge without an integrated system for announcements, registrations, and feedback.
-5. **Lack of Recognition**: Success stories of alumni often go unnoticed, missing the opportunity to inspire current students and instill pride among graduates.
-6. **Feedback Channels**: Institutions struggle to gather insights and suggestions from their alumni for continuous improvement.
-
-**Proposed Solution**:
-The creation of a robust Alumni Association platform, accessible via both web and mobile applications, will address these challenges. The platform will:
-
-1. Provide easy and secure alumni registration and profile management.
-2. Facilitate networking with a directory, job board, and mentorship programs.
-3. Enable secure and transparent donation systems to support institutional initiatives.
-4. Showcase alumni achievements, promoting recognition and motivation.
-5. Manage events effectively with automated tools for planning, registration, and reminders.
-6. Incorporate feedback mechanisms for continuous development and engagement strategies.
-
-**Impact**:
-By addressing these challenges, the platform will:
-
-1. Strengthen alumni relationships and increase their participation in institutional growth.
-2. Enhance career opportunities for alumni through mentorship and job connections.
-3. Encourage a culture of giving back to the institution, driving financial support for various initiatives.
-4. Build a vibrant and engaged alumni community that contributes to the legacy and future success of the institution. 
+Website that tells you the location of the nearest e-waste collection and recycling facility. Offers educational pop-ups on the harmful components of your e-waste and their effects on the environment and human health if not disposed correctly. There could be an option to input the model of your old device and earn credit points relative to the amount of precious metals recovered from the device if disposed correctly.
 ## Problem Creater's Organization
-Ministry of Education, Government of India
+Ministry of Environment
 
 ## Idea
-Create a dynamic and scalable Alumni Association platform that strengthens the bond between alumni and their alma mater. The platform will serve as a one-stop solution for networking, mentorship, donations, event participation, and showcasing alumni achievements through web and mobile applications.
+The main idea of the problem statement is to develop a user-friendly website that helps people locate the nearest e-waste collection and recycling facilities. The website should also provide educational information about the harmful components of e-waste and the environmental and health risks associated with improper disposal. Additionally, the site should allow users to enter the model of their old electronic devices to estimate and earn credit points based on the precious metals that can be recovered from these devices when disposed of correctly. This solution aims to promote proper e-waste disposal through awareness and incentives.
+
+![image](https://github.com/AshwinKumar-Saveetha/SIHPS/assets/155129814/721a7bcb-343e-42ea-b0d3-0df22194408e)
+
 
 ## Proposed Solution / Architecture Diagram
-![alt text](image.png)
+![image](https://github.com/AshwinKumar-Saveetha/SIHPS/assets/155129814/b90d0af4-6788-4c1c-98f4-573fdbb59763)
 
-**Solution**:
-1. **User-Friendly Interface**: Accessible web and mobile apps with intuitive design for seamless interaction.
-2. **Centralized Backend**: A robust backend to manage user data, events, jobs, and donations securely.
-3. **Key Features**: Alumni registration, secure donation portal, job board, networking hub, event management, and success story highlights.
-4. **Security**: End-to-end encryption, secure authentication (OAuth 2.0), and GDPR compliance.
 
-**Architecture Diagram**:
-1. **Frontend** → Web (React.js) and Mobile (Flutter).
-2. **API Gateway** → Handles all requests and routes them to the backend.
-3. **Backend** → Built on Django/Node.js with a RESTful API.
-4. **Database** → PostgreSQL for structured data and Redis for real-time updates.
-5. **Third-Party Integrations** → Payment gateways, notification systems, and cloud hosting.
 
 ## Use Cases
-1. **Alumni Registration**:
-    Simplified sign-up and profile updates for alumni across web and mobile platforms.
-2. **Donation Management**:
-    Alumni can contribute to initiatives securely with options to track donation history.
-3. **Networking Features**:
-    Discover alumni based on shared interests, location, or profession.
-4. **Job Opportunities**:
-    Alumni can post and apply for jobs through a centralized portal.
-5. **Event Participation**:
-    Alumni register for events, receive reminders, and provide feedback.
-6. **:
-    Display notable alumni stories to inspire others and enhance institutional pride.
+#### 1.Locate E-Waste Facility:
 
+Actor: User
+Description: User enters their location or allows access to their geolocation to find the nearest e-waste facility.
+Preconditions: User has a device with internet access and location services enabled.
+Postconditions: User receives a list of nearby facilities with details such as address, contact info, and working hours.
+#### 2.Educational Content:
+
+Actor: User
+Description: Users receive educational pop-ups while navigating the site, providing information on harmful e-waste components and proper disposal practices.
+Preconditions: User interacts with the site.
+Postconditions: User is educated on the importance of proper e-waste disposal and its environmental and health impacts.
+
+#### 3.Device Model Input and Credit Points:
+
+Actor: User
+Description: Users input their device model to see the potential credit points they can earn by recycling.
+Preconditions: User has a device model to input.
+Postconditions: User sees the estimated credit points and understands the value of proper e-waste disposal.
 
 ## Technology Stack
-1. **Frontend**: React.js for web, Flutter for mobile.
-2. **Backend**: Node.js (Express) or Django for server-side logic.
-3. **Database**: PostgreSQL/MySQL for data storage; Firebase for real-time data sync.
-4. **Hosting**: AWS/GCP with scalable load balancing.
-5. **Authentication**: OAuth 2.0 and JWT for secure access.
-6. **Payment Gateway**: Razorpay, Stripe, or PayPal.
-7. **Notification Services**: Twilio for SMS, SendGrid for email notifications.
+#### 1.Frontend:
+Frameworks: React.js, Vue.js
+Description: Develop a responsive web interface and mobile application for seamless user interaction and accessibility.
 
+#### 2.Backend:
+Languages: Python, Node.js
+Database: MongoDB, PostgreSQL
+Description: Build a robust backend system to manage user data, facility information, and credit points transactions.
+
+#### 3.Geolocation Services:
+API: Google Maps API, Mapbox API
+Description: Utilize geolocation services to provide accurate location-based information on e-waste collection facilities.
+
+#### 4.Notification System:
+Service: Twilio, Firebase Cloud Messaging
+Description: Implement a notification system to send alerts and reminders to users regarding e-waste disposal and recycling options.
 
 ## Dependencies
-1. **APIs and SDKs**:
-   1. Payment gateway APIs for donation handling.
-   2. Firebase for real-time communication.
-2. **Cloud Services**: AWS or GCP for reliable hosting and scalability.
-3. **Libraries**:
-   1. Material-UI or Bootstrap for frontend styling.
-   2. Socket.io for real-time updates.
-4. **Version Control**: GitHub/GitLab for collaborative development.
-5. **Third-Party Tools**: Docker for containerization, Postman for API testing.
+#### 1.Collaboration with E-Waste Facilities:
+Establish partnerships with e-waste collection and recycling facilities to integrate their services into the platform.
+
+#### 2.Regulatory Compliance:
+Ensure compliance with local regulations and environmental standards for e-waste management and recycling.
+
+#### 3.Public Engagement:
+Collaborate with environmental organizations and community groups to promote the platform and encourage public participation in responsible e-waste disposal.
+
+#### 4.Technological Infrastructure:
+Depend on reliable internet connectivity and technological infrastructure to support the platform's functionalities and user engagement.
